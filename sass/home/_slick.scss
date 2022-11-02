@@ -1,0 +1,17 @@
+.carousel .slick-dots {
+    bottom: 16px;
+    li button:before{
+        color: $white;
+        opacity: .4;
+        font-size: 1.4rem;
+    }
+    li.slick-active button:before{
+        color: $white;
+        opacity: 1;
+    }
+}
+
+#clients .slick-prev::before, .slick-next::before {
+    font-size: 3rem;
+    color: #000;
+}

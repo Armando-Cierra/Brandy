@@ -1,0 +1,459 @@
+//Laptops
+@media only screen and (max-width: 1600px){
+    //Generals
+    .espaciado{
+        height: 50px;
+    }
+    button{
+        font-size: 1.2rem;
+        width: 180px;
+    }
+    //Menu
+    nav{
+        height: 70px;
+    }
+    .gradient{
+        height: 20px;
+    }
+    //Box-menu
+    .box-menu{
+        height: calc(100vh - 70px);
+        margin-top: 70px;
+        .box{
+            max-width: 600px;
+            ul{
+                li{
+                    height: 80px;
+                    margin: 0;
+                    a{
+                        font-size: 2.5rem;
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+        span{
+            font-size: 2.7rem;
+        }
+    }
+    //Lets talk
+    .lets-talk{
+        width: 180px;
+        height: 50px;
+        div{
+            padding: 10px;
+            font-size: 1rem;
+        }
+    }
+    //Header
+    header{
+        margin-top: 70px;
+        height: calc(100vh - 70px);
+    }
+    //covers
+    .cover {
+        height: 60vh;
+        margin-bottom: 20px;
+    }
+    //info
+    .info{
+        height: 70vh;
+        margin-bottom: 20px;
+    }
+    //Clients
+    .clients{
+        height: 70vh;
+        #clients{
+            width: 85%;
+            div{
+                .container{
+                    .brand{
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+    //Footer
+    footer{
+        .contact{
+            h2{
+                font-size: 1.5rem;
+            }
+            h3{
+                font-size: 1rem;
+            }
+            p{
+                font-size: .8rem;
+            }
+        }
+        .social{
+            height: 35px;
+        }
+    }
+}
+
+//Tablets
+@media only screen and (max-width: 1200px){
+    //Generals
+    .espaciado{
+        height: 75px;
+    }
+    button{
+        font-size: 1.2rem;
+        width: 180px;
+    }
+    //Menu
+    nav{
+        height: 70px;
+    }
+    //Header
+    header{
+        margin-top: 70px;
+        height: 40vh;
+        .draggable{
+            .slick-track{
+                .slick-slide{
+                    div{
+                        .element{
+                            .logo{
+                                height: 45px;
+                                position: absolute;
+                                top: 20px;
+                                left: 20px;
+                            }
+                            .text{
+                                max-height: 150px;
+                                height: auto;
+                                max-width: 90%;
+                                bottom: 40px;
+                                right: 30px;
+                                position: absolute;
+                            }
+                            .img{
+                                position: absolute;
+                                width: 100%;
+                                min-height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //latest
+    .latest{
+        height: 15vh;
+    }
+    //covers
+    .cover {
+        height: 35vh;
+        background-attachment: scroll;
+        margin-bottom: 10px;
+        .content{
+            flex-direction: row;
+            height: 90%;
+            margin-top: 0;
+            img{
+                margin-right: 30px;
+                height: auto;
+                width: 288px;
+            }
+        }
+    }
+    //info
+    .info{
+        height: auto;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .icon{
+            display: none;
+        }
+        .background{
+            width: 30vw;
+            min-height: 30vh;
+            height: auto;
+        }
+        .content{
+            width: 70vw;
+            padding: 20px 10px;
+            padding-left: 20px;
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+            .btn{
+                margin-top: 15px;
+                button{
+                    height: 40px;
+                    width: 100px;
+                    border-radius: 4px;
+                    a{
+                        font-size: .8rem;
+                    }
+                }
+            }
+            .social{
+                height: 30px;
+                margin-top: 15px;
+                a{
+                    opacity: 1;
+                    margin: 0 2px;
+                }
+            }
+        }
+    }
+    //Clients
+    .clients{
+        height: 40vh;
+        #clients{
+            width: 75%;
+            transform: translateX(-10px);
+            .draggable {
+                transform: translateX(10px);
+            }
+        }
+    }
+    //Services
+    .services{
+        height: 40vh;
+        h2{
+            margin-top: 50px;
+        }
+        .content{
+            .service{
+                a{
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    //Footer
+    footer{
+        padding-bottom: 75px;
+        .contact{
+            h2{
+                font-size: 1.2rem;
+            }
+            h3{
+                font-size: .8rem;
+            }
+            p{
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+//Phones
+@media only screen and (max-width: 599px){
+    //Generals
+    .espaciado{
+        height: 50px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .button{
+        font-size: .8rem;
+        height: 40px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    //Menu
+    nav{
+        height: 60px;
+    }
+    //Box-menu
+    .box-menu{
+        height: calc(100vh - 60px);
+        margin-top: 60px;
+        .box{
+            ul{
+                li{
+                    a{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        span{
+            font-size: 2rem;
+        }
+    }
+    //Header
+    header{
+        margin-top: 60px;
+        height: 30vh;
+        .draggable{
+            .slick-track{
+                .slick-slide{
+                    div{
+                        .element{
+                            .logo{
+                                display: none;
+                            }
+                            .text{
+                                max-height: 75%;
+                                max-width: 85%;
+                                height: auto;
+                                width: auto;
+                                bottom: 60px;
+                                right: 30px;
+                                position: absolute;
+                            }
+                            .img{
+                                position: absolute;
+                                width: 100%;
+                                min-height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .carousel .slick-dots {
+        bottom: 16px;
+        li button:before{
+            opacity: .4;
+            font-size: 1rem;
+        }
+    }
+    //latest
+    .latest{
+        height: 12vh;
+        img{
+            margin-top: -25px;
+        }
+    }
+    //covers
+    .cover {
+        height: 25vh;
+        background-attachment: scroll;
+        margin-bottom: 10px;
+        .content{
+            flex-direction: row;
+            height: 90%;
+            margin-top: 0;
+            img{
+                margin-right: 30px;
+                height: auto;
+                width: 150px;
+            }
+        }
+    }
+    //info
+    .info{
+        height: auto;
+        margin-bottom: 10px;
+        .background{
+            display: none;
+        }
+        .content{
+            width: 100vw;
+            padding: 20px 10px;
+            padding-left: 0;
+
+        }
+    }
+    //Clients
+    .clients{
+        #clients{
+            width: 100%;
+            div{
+                .container{
+                    .brand{
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    //Services
+    .services {
+        height: 70vh;
+        .content{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            min-height: 80%;
+            .service:nth-child(1){
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            .service:nth-child(2){
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            .service:nth-child(3){
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 5;
+            }
+            .service:nth-child(4){
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                grid-row-end: 5;
+            }
+            .service{
+                span{
+                    font-size: .8rem !important;
+                }
+            }
+        }
+    }
+    footer{
+        padding-bottom: 100px;
+        h2{
+            font-size: 1.5rem;
+        }
+        h3{
+            font-size: 1.2rem;
+        }
+        .social{
+            top: 80%;
+            right: 70%;
+        }
+    }    
+}
+
+@media only screen and(max-width: 359px){
+    header{
+        .draggable{
+            .slick-track{
+                .slick-slide{
+                    div{
+                        .element{
+                            .text{
+                                max-height: 65%;
+                                max-width: 75%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cover{
+        .content{
+            img{
+                width: 100px;
+            }
+        }
+    }
+}

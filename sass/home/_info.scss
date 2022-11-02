@@ -1,0 +1,86 @@
+.info {
+    width: 100%;
+    height: 70vh;
+    display: none;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+    background: $white-grey;
+    .background{
+        width: 50vw;
+        height: 100%;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    .content{
+        width: 50vw;
+        height: 100%;
+        padding: 0 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        p{
+            text-align: justify;
+            margin: 0;
+            margin-top: 20px;
+            line-height: 1.5;
+            font-size: 1.1rem;
+        }
+        .btn{
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            button{
+                &:nth-child(2){
+                    margin-left: 10px;
+                }
+            }
+        }
+        .social {
+            width: 100%;
+            height: 40px;
+            margin-top: 30px;
+            a{
+                height: 100%;
+                opacity: .75;
+                margin: 0 10px;
+                transition: ease-in-out .15s;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .icon{
+        position: absolute;
+        transform: rotate(45deg);
+        width: 125px;
+        height: 125px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, .35);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        img {
+            transform: rotate(-45deg);
+            height: 70%;
+        }
+    }
+}

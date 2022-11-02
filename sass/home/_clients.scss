@@ -1,0 +1,62 @@
+.clients {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color: $black;
+        text-align: center;
+        margin-top: 0;
+    }
+    #clients {
+        width: 70%;
+        height: 50%;
+        .slick-prev{
+            margin-left: -30px;
+            &::before{
+                font-size: 2rem;
+            }
+        }
+        .slick-next{
+            margin-right: -30px;
+            &::before{
+                font-size: 2rem;
+            }
+        }
+        .draggable{
+            height: 100%;
+            transform: translateX(15px);
+            .slick-track{
+                height: 100%;
+                .slick-slide{
+                    height: 100%;
+                    outline: none;
+                    div{
+                        height: 100%;
+                        .brand{
+                            height: 90%;
+                            position: relative;
+                            overflow: hidden;
+                            border-right: 1px solid gray;
+                            img{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                margin: auto;
+                                max-width: 60%;
+                                max-height: 60%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

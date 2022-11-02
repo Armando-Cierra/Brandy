@@ -1,0 +1,52 @@
+footer{
+    background: $black;
+    padding: 30px;
+    position: relative;
+    .contact{
+        h2{
+            margin: 0;
+            color: $white;
+            font-size: 1.5rem;
+        }
+        h3{
+            color: $white;
+            font-size: 1rem;
+            font-family: $regular;
+            font-weight: 300;
+            a{
+                text-decoration: none;
+                color: $white;
+                transition: ease-in-out .15s;
+                &:hover{
+                    color: $purple;
+                }
+            }
+        }
+        p{
+            color: $white;
+            font-size: .8rem;
+            strong{
+                text-transform: uppercase;
+                font-family: $titles;
+            }
+        }
+    }
+    .social{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        height: 35px;
+        a{
+            height: 100%;
+            margin-left: 10px;
+            opacity: .75;
+            transition: ease-in-out .15s;
+            &:hover{
+                opacity: .8rem;
+            }
+            img{
+                height: 100%;
+            };
+        }
+    }
+}

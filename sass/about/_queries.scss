@@ -1,0 +1,256 @@
+//Laptop
+@media only screen and (max-width: 1600px){
+    //Header
+    .we-are{
+        margin-top: 70px;
+    }
+    //Structure
+    .structure{
+        .titles{
+            h4{
+                width: 50%;
+            }
+        }
+        .our-structure{
+            width: 45%;
+        }
+    }
+}
+
+//Intermedio entre laptop y tablet
+@media only screen and (max-width: 1200px){
+    //Header
+    .we-are{
+        height: 30vh;
+        h1{
+            font-size: 7rem;
+        }
+        h3{
+            font-size: 4rem;
+        }
+    }
+    .phrase{
+        height: 20vh;
+        h3{
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+    //Structure
+    .structure{
+        .titles{
+            h4{
+                width: 60%;
+                font-size: 2rem;
+            }
+            p{
+                width: 60%;
+            }
+        }
+        .our-structure{
+            width: 45%;
+            h3{
+                font-size: 2.5rem;
+            }
+        }
+        .structure-elements{
+            padding: 80px 20px;
+        }
+    }
+}
+
+//tablet
+@media only screen and (max-width: 950px){
+    //structure
+    .structure{
+        padding-bottom: 20px;
+        .titles{
+            h4{
+                width: 90%;
+                font-size: 2rem;
+            }
+            p{
+                width: 75%;
+            }
+        }
+        .our-structure{
+            width: 73%;
+            h3{
+                font-size: 2.5rem;
+            }
+        }
+        .structure-elements{
+            padding: 80px 20px;
+            grid-template-columns: repeat(2, 1fr);
+            .element{
+                img{
+                    height: 50px;;
+                }
+                h4{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    //team
+    .team{
+        .our-team{
+            width: 50%;
+            margin-bottom: 80px;
+        }
+        .members{
+            padding: 0 20px;
+            grid-template-columns: repeat(2, 1fr);
+            .member{
+                .degradado{
+                    background: rgba(29, 3, 16, 0.6);
+                    opacity: 1;
+                    .line{
+                        opacity: 1;
+                        margin-left: 0;
+                        &:first-child{
+                            opacity: 1;
+                            margin-left: 0;
+                        }
+                    }
+                    h4{
+                        opacity: 1;
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+                    p{
+                        opacity: 1;
+                        font-size: .6rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    //members-of
+    .members-of{
+        img{
+            margin: auto;
+            display: block;
+            margin-top: 40px;
+            width: 65%;
+        }
+        .text{
+            position: relative;
+            width: 100%;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                text-align: center;
+                font-size: 1.6rem;
+            }
+            h3{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+//Phones
+@media only screen and (max-width: 599px){
+    //Header
+    .we-are{
+        margin-top: 60px;
+        h1{
+            font-size: 4.8rem;
+        }
+        h3{
+            font-size: 2rem;
+        }
+    }
+    .phrase{
+        height: 20vh;
+        h3{
+            text-align: center;
+            font-size: 1.6rem;
+        }
+    }
+
+    //Structure
+    .structure{
+        .titles{
+            h4{
+                width: 95%;
+                font-size: 1.4rem;
+            }
+            p{
+                width: 90%;
+            }
+        }
+        .our-structure{
+            width: 90%;
+            h3{
+                font-size: 1.6rem;
+            }
+        }
+        .structure-elements{
+            padding: 80px 20px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 30px;
+            .element{
+                img{
+                    height: 40px;
+                }
+                h4{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    //Team
+    .team{
+        .our-team{
+            width: 60%;
+            h3{
+                font-size: 1.8rem;
+            }
+        }
+        .members{
+            grid-gap: 10px;
+            .member{
+                height: 200px;
+                .degradado{
+                    p{
+                        font-size: .4rem;
+                    }
+                }
+            }
+        }
+    }
+    //members-of
+    .members-of{
+        img{
+            margin: auto;
+            display: block;
+            margin-top: 40px;
+            width: 85%;
+        }
+        .text{
+            h3{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 359px){
+    .we-are{
+        h1{
+            font-size: 4.3rem;
+        }
+        h3{
+            font-size: 1.5rem;
+        }
+    }
+}

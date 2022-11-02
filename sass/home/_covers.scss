@@ -1,0 +1,25 @@
+.cover{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    .content{
+        margin-top: -20px;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            height: 75%;
+        }
+        button{
+            margin-top: 40px;
+        }
+    }
+}

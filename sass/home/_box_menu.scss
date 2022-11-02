@@ -1,0 +1,92 @@
+.box-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    background: rgba(0, 0, 0, .80);
+    z-index: 900;
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+    opacity: 0;
+    transition: ease-in-out .3s;
+    .box{
+        width: 100%;
+        max-width: 800px;
+        height: 100%;
+        background: $white;
+        box-shadow: 0 0 25px rgba(0, 0, 0, .8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-right: -100%;
+        transition: ease-in-out .5s;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            li{
+                height: 100px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 15px 0;
+                a{
+                    display: inline-block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    text-decoration: none;
+                    color: $black;
+                    font-family: $titles;
+                    font-size: 3rem;
+                    position: relative;
+                    padding: 0 30px;
+                    transition: ease-in-out .15s;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        width: 0;
+                        height: 8px;
+                        background: $purple;
+                        transition: ease-in-out .15s;
+                    }
+                    &:hover::after{
+                        left: 0;
+                        width: 100%;
+                    }
+                    &:hover{
+                        color: $purple;
+                    }
+                }
+                .active{
+                    color: $purple;
+                }
+            }
+        }
+        span{
+            position: absolute;
+            top:0;
+            left: 0;
+            padding: 30px;
+            font-family: $titles;
+            font-size: 2.5rem;
+            color: $black;
+            cursor: pointer;
+            opacity: .45;
+            transition: ease-in-out .15s;
+            &:hover{
+                color: $purple;
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+header {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    .draggable{
+        height: 100%;
+        .slick-track{
+            height: 100%;
+            .slick-slide{
+                height: 100%;
+                div{
+                    height: 100%;
+                    .element{
+                        height: 100%;
+                        position: relative;
+                        .logo{
+                            z-index: 3;
+                            height: 70px;
+                            position: absolute;
+                            top: 20px;
+                            left: -20px;
+                            opacity: 0;
+                            transition: ease-in-out .25s;
+                            transition-delay: 1s;
+                        }
+                        .text{
+                            z-index: 2;
+                            height: 200px;
+                            bottom: -30px;
+                            right: 30px;
+                            position: absolute;
+                            opacity: 0;
+                            transition: ease-in-out .25s;
+                            transition-delay: 1s;
+                        }
+                        .img{
+                            z-index: 1;
+                            position: absolute;
+                            width: 100%;
+                            min-height: 100%;
+                        }
+                    }
+                }
+            }
+            .slick-active{
+                div{
+                    .element{
+                        .logo{
+                            left: 20px;
+                            opacity: 1;
+                        }
+                        .text{
+                            bottom: 80px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

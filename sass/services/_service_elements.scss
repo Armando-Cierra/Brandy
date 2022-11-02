@@ -1,0 +1,41 @@
+.services-sec{
+    .title{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $white-grey;
+        img {
+            height: 70%;
+        }
+    }
+    .services-box{
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        padding: 60px 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        .service{
+            background: $purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            height: 250px;
+            overflow: hidden;
+            transition: ease-in-out .25s;
+            &:hover{
+                background: $purple-dark;
+            }
+            &:hover img{
+                width: 100%;
+            }
+            img{
+                width: 85%;
+                transition: ease-in-out .25s;
+            }
+        }
+    }
+}
