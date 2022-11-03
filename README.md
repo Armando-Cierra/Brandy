@@ -8,6 +8,7 @@
 ### Project Description
 
 HTML and SCSS template done for the Costa Rican design agency Brandy.
+
 **Year:** 2019
 
 ---
